@@ -7,7 +7,7 @@ h1 {
   font-family: Georgia;
   font-size: 50px;
   font-weight: bold;
-  background-color: DodgerBlue;
+  background-color: url("assets/iot.jpg");
   text-align: center;
 }
 
