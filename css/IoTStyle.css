@@ -24,4 +24,5 @@ body {
 .image {
   text-align: center;
   background-color: DodgerBlue;
+  background-image: url("assets/iot.jpg")
 }
