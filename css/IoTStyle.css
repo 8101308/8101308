@@ -1,6 +1,12 @@
 p {
  font-family: Arial;
+}
 
+a {
+  font-family: sans-serif;
+  font-size: 30;
+  background-color: DodgerBlue;
+  text-align: right;
 }
 
 h1 {
@@ -23,5 +29,4 @@ body {
 
 .image {
   text-align: center;
-  background-color: DodgerBlue;
 }
