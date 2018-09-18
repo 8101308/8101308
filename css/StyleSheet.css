@@ -3,3 +3,37 @@
   font-size: 40px;
   font-family: impact;
 }
+
+.navBar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  text-align: center;
+  background-color: rgb(73 97 142);
+  padding: 20px;
+}
+.home {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 30px;
+  font-family: Arial;
+}
+.destinations {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 30px;
+  font-family: Arial;
+}
+.help {
+  grid-column: 3;
+  grid-row: 1;
+  font-size: 30px;
+  font-family: Arial;
+}
+
+.logIn {
+  grid-column: 4;
+  grid-row: 1;
+  font-size: 30px;
+  font-family: Arial;
+}
