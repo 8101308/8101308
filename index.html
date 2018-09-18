@@ -16,5 +16,20 @@
     <div class="title">
       <h1>Destination Nation<h1>
     </div>
+    <br><br><br><br><br><br>
+    <div class="finder">
+      <input id="searchPlace" type="text" placeholder="Search...">
+      <br>
+      <button id="searchPlaces" onclick="searchPlaceFunction()">Search...</button>
+    </div>
+    <script>
+      function searchPlaceFunction() {
+        var place = document.getElementById("searchPlace").value;
+        if (place == "ACT") {
+          window.open("https://8101308.github.io/act"); }
+        else {
+          window.open("https://8101308.github.io/noResults");
+        }  }
+    </script>
   <body>
 <html>
