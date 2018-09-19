@@ -10,7 +10,9 @@
   grid-gap: 10px;
   text-align: center;
   background-color: rgb(73 97 142);
-  padding: 20px;
+  padding: 5px;
+  font-style: bold;
+  font-size: 30px;
 }
 .home {
   grid-column: 1;
@@ -21,19 +23,22 @@
 .destinations {
   grid-column: 2;
   grid-row: 1;
-  font-size: 30px;
   font-family: Arial;
 }
 .help {
   grid-column: 3;
   grid-row: 1;
-  font-size: 30px;
   font-family: Arial;
 }
 
 .logIn {
   grid-column: 4;
   grid-row: 1;
-  font-size: 30px;
   font-family: Arial;
+}
+
+button {
+  background-color: rgb(73 97 142);
+  border: 0px;
+  font-size: 20px;
 }
