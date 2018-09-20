@@ -1,9 +1,13 @@
+button {
+  background-color: rgb(73 97 142);
+  border: 0px;
+  font-size: 30px;
+}
 
 .title {
   text-align: center;
   font-size: 40px;
   font-family: impact;
-  text-decoration-color: red;
 }
 
 .navBar {
@@ -37,12 +41,6 @@
   grid-column: 4;
   grid-row: 1;
   font-family: Arial;
-}
-
-button {
-  background-color: rgb(73 97 142);
-  border: 0px;
-  font-size: 30px;
 }
 
 .finder {
