@@ -1,3 +1,4 @@
+
 .title {
   text-align: center;
   font-size: 40px;
@@ -66,4 +67,12 @@ button {
 #space1 {
   grid-column: 3;
   grid-row: 2;
+}
+
+.tB {
+  background: url(assets/Title-picture.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

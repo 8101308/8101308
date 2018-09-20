@@ -21,27 +21,28 @@
     </div>
   </header>
   <body>
-    <div class="title">
-      <h1>Destination Nation<h1>
+    <div class="tB">
+      <div class="title">
+        <h1>Destination Nation<h1>
+      </div>
+      <br><br><br><br><br><br>
+      <div class="finder">
+        <input id="searchPlace" type="text" placeholder="Search...">
+        <br>
+        <button id="searchPlaces" onclick="searchPlaceFunction()">Search...</button>
+	      <h1 id="space1"></h1>
+      </div>
+      <script>
+        function searchPlaceFunction() {
+          var place = document.getElementById("searchPlace").value;
+          if (place == "ACT") {
+            window.open("https://8101308.github.io/act"); }
+          else {
+            window.open("https://8101308.github.io/noResults");
+          }  }
+        function homeFunction() {
+          window.open("https://8101308.github.io/");  }
+      </script>
     </div>
-    <br><br><br><br><br><br>
-    <div class="finder">
-      <input id="searchPlace" type="text" placeholder="Search...">
-      <br>
-      <button id="searchPlaces" onclick="searchPlaceFunction()">Search...</button>
-	    <h1 id="space1"></h1>
-    </div>
-    <script>
-      function searchPlaceFunction() {
-        var place = document.getElementById("searchPlace").value;
-        if (place == "ACT") {
-          window.open("https://8101308.github.io/act"); }
-        else {
-          window.open("https://8101308.github.io/noResults");
-        }  }
-      function homeFunction() {
-        window.open("https://8101308.github.io/");
-      }
-    </script>
   <body>
 <html>
