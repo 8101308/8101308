@@ -70,7 +70,7 @@ button {
 }
 
 .tB {
-  background: url(assets/Title-picture.png);
+  background-image: url('.../assets/titlePicture.jpg');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
