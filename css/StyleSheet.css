@@ -8,6 +8,7 @@ button {
   text-align: center;
   font-size: 40px;
   font-family: impact;
+  text-shadow: 2px 2px white;
 }
 
 .navBar {
@@ -57,6 +58,14 @@ button {
   grid-gap: 20px;
   grid-template-rows: (2, 1fr);
   text-align: center;
+}
+
+.searchField {
+  border-radius: 25px;
+}
+
+.searchButton {
+  border-radius: 25px;
 }
 
 #searchPlace {

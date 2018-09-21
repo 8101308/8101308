@@ -6,8 +6,8 @@
   </head>
   <header>
     <div class="navBar">
-      <div class="home">
-        <button id="homeButton" onclick="homeFunction()">Home</button>
+      <div>
+        <button id="homeButton" class="home" onclick="homeFunction()">Home</button>
       </div>
       <div class="destinations">
         <button id="destinationsButton" class="dropbtn" onclick="destinationsFunction()">Destinations</button>
@@ -17,11 +17,11 @@
           <a href="#specialOffers">Special Offers</a>
         </div>
       </div>
-      <div class="help">
-        <button id="helpButton" onclick="helpFunction()">Help</button>
+      <div>
+        <button id="helpButton" class="help" onclick="helpFunction()">Help</button>
       </div>
-      <div class="logIn">
-        <button id="logInButton" onclick="logInFunction()">Log In</button>
+      <div>
+        <button id="logInButton" class="logIn" onclick="logInFunction()">Log In</button>
       </div>
     </div>
   </header>
@@ -32,9 +32,9 @@
       </div>
       <br><br><br><br><br><br>
       <div class="finder">
-        <input id="searchPlace" type="text" placeholder="Search...">
+        <input id="searchPlace" class="searchField" type="text" placeholder="Search...">
         <br>
-        <button id="searchPlaces" onclick="searchPlaceFunction()">Search...</button>
+        <button id="searchPlaces" class="searchButton" onclick="searchPlaceFunction()">Search...</button>
 	      <h1 id="space1"></h1>
       </div>
       <script>
