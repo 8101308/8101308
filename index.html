@@ -12,9 +12,15 @@
       <div class="destinations">
         <button id="destinationsButton" class="dropbtn" onclick="destinationsFunction()">Destinations</button>
         <div id="myDropdown" class="dropdown-content">
-          <a href="#act">ACT</a>
-          <a href="#nsw">NSW</a>
-          <a href="#specialOffers">Special Offers</a>
+          <a href="#act">
+              <button class="dACT" onclick="actFunction()">ACT</button>
+          </a>
+          <a href="#nsw">
+              NSW
+          </a>
+          <a href="#specialOffers">
+              Special Offers
+          </a>
         </div>
       </div>
       <div>
@@ -32,28 +38,28 @@
       </div>
       <br><br><br><br><br><br>
       <div class="finder">
-        <input id="searchPlace" class="searchField" type="text" placeholder="Search...">
+        <input id="searchPlace" class="searchField" type="text" placeholder="  Search...">
         <br>
-        <button id="searchPlaces" class="searchButton" onclick="searchPlaceFunction()">Search...</button>
+        <button id="searchPlaces" class="searchButton" onclick="searchPlaceFunction()">Press to Search</button>
 	      <h1 id="space1"></h1>
       </div>
       <script>
         function searchPlaceFunction() {
           var place = document.getElementById("searchPlace").value;
           if (place == "ACT") {
-            window.open("https://8101308.github.io/act"); }
+            window.open("https://8101308.github.io/act","_self"); }
           else {
-            window.open("https://8101308.github.io/noResults");
+            window.open("https://8101308.github.io/noResults","_self");
           }  }
 
         function homeFunction() {
-          window.open("https://8101308.github.io/");  }
+          window.open("https://8101308.github.io/","_self");  }
 
         function destinationsFunction() {
               document.getElementById("myDropdown").classList.toggle("show");
           }
 
-          window.onclick = function(event) {
+        window.onclick = function(event) {
             if (!event.target.matches('.dropbtn')) {
 
               var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -65,7 +71,11 @@
                 }
               }
             }
-          }
+        }
+
+        function actFunction() {
+          window.open("https://8101308.github.io/act","_self");
+        }
       </script>
     </div>
   <body>

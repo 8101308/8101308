@@ -1,5 +1,4 @@
 button {
-  background-color: rgb(73 97 142);
   border: 0px;
   font-size: 30px;
 }
@@ -26,6 +25,7 @@ button {
   grid-row: 1;
   font-size: 30px;
   font-family: Arial;
+  background-color: rgb(73 97 142);
 }
 .home:hover, .home:focus {
     background-color: #2b8fd1;
@@ -34,11 +34,13 @@ button {
   grid-column: 2;
   grid-row: 1;
   font-family: Arial;
+  background-color: rgb(73 97 142);
 }
 .help {
   grid-column: 3;
   grid-row: 1;
   font-family: Arial;
+  background-color: rgb(73 97 142);
 }
 .help:hover, .help:focus {
     background-color: #2b8fd1;
@@ -47,6 +49,7 @@ button {
   grid-column: 4;
   grid-row: 1;
   font-family: Arial;
+  background-color: rgb(73 97 142);
 }
 .logIn:hover, .logIn:focus {
     background-color: #2b8fd1;
@@ -61,11 +64,11 @@ button {
 }
 
 .searchField {
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .searchButton {
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 #searchPlace {
@@ -93,35 +96,31 @@ button {
   background-position: center;
 }
 
-/* Dropdown Button */
 .dropbtn {
     color: black;
     border: none;
     cursor: pointer;
+    background-color: rgb(73 97 142);
 }
 
-/* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
     background-color: #2b8fd1;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
+    padding-left: 100px;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -129,8 +128,8 @@ button {
     display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+.dACT {background-color: #f1f1f1;}
+
+.dACT:hover {background-color: #ddd}
