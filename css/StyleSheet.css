@@ -131,5 +131,10 @@ button {
 .show {display:block;}
 
 .dACT {background-color: #f1f1f1;}
-
 .dACT:hover {background-color: #ddd}
+
+.dNSW {background-color: #f1f1f1;}
+.dNSW:hover {background-color: #ddd}
+
+.dSpecials {background-color: #f1f1f1;}
+.dSpecials:hover {background-color: #ddd}
