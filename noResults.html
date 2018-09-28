@@ -32,8 +32,31 @@
     </div>
   </header>
   <body>
-    <div>
-      <h1>Sorry, we couldn't find a match for your search!</h1>
+    <div class="noResultsGrid">
+      <div>
+        <img src="assets/noResultsPicture.jpg" class="noResultsPicture">
+      </div>
+      <h1 id="space2"></h1>
+      <div class="noResultsContent">
+        <h1>Sorry, we couldn't find a match for your search!</h1>
+        <br>
+        <h2>Here is a list of all locations we have available!</h2>
+        <div class="listPlaces">
+          <div class="listOfPlaces">
+            <a>
+              <button id="actListButton" onclick="actFunction()">ACT</button>
+            </a>
+            <br><br>
+            <a>
+              <button id="nswListButton" onclick="nswFunction()">NSW</button>
+            </a>
+            <br><br>
+            <a>
+              <button id="specialsListButton" onclick="speacialsFunction()">Specials</button>
+            </a>
+          </div>
+        </div>
+      </div>
       <script>
         function homeFunction() {
           window.open("https://8101308.github.io/","_self");  }

@@ -139,3 +139,54 @@ button {
 
 .dSpecials {background-color: #f1f1f1;}
 .dSpecials:hover {background-color: #ddd}
+
+/* No results page list of places */
+.listPlaces {
+  margin-left: 30px;
+  background-color: #f1f1f1;
+}
+
+.listOfPlaces {
+  border-style: solid;
+  border-color: #f1f1f1;
+  background-color: #f1f1f1;
+  padding: 30px;
+  display: block;
+  position: absolute;
+}
+
+#actListButton {background-color: #f1f1f1;}
+#actListButton:hover {background-color: #ddd;}
+
+#nswListButton {background-color: #f1f1f1;}
+#nswListButton:hover {background-color: #ddd;}
+
+#specialsListButton {background-color: #f1f1f1;}
+#specialsListButton:hover {background-color: #ddd;}
+
+.noResultsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.noResultsContent {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.noResultsPicture {
+  grid-column: 3;
+  grid-row: 1;
+  width: 816px;
+  height: 612px;
+  text-align: right;
+  transform: rotate(90deg);
+  margin-top: 100px;
+  margin-left: 400px;
+}
+
+#space2 {
+  grid-column: 2;
+  grid-row: 1;
+}
