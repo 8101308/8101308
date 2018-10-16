@@ -26,21 +26,24 @@ button {
   font-size: 30px;
   font-family: Arial;
   background-color: rgb(73 97 142);
+  color: #e2e2e2;
 }
 .home:hover, .home:focus {
     background-color: #2b8fd1;
 }
-.destinations {
+#destinationsButton {
   grid-column: 2;
   grid-row: 1;
   font-family: Arial;
   background-color: rgb(73 97 142);
+  color: #e2e2e2;
 }
 .help {
   grid-column: 3;
   grid-row: 1;
   font-family: Arial;
   background-color: rgb(73 97 142);
+  color: #e2e2e2;
 }
 .help:hover, .help:focus {
     background-color: #2b8fd1;
@@ -50,6 +53,7 @@ button {
   grid-row: 1;
   font-family: Arial;
   background-color: rgb(73 97 142);
+  color: #e2e2e2;
 }
 .logIn:hover, .logIn:focus {
     background-color: #2b8fd1;
@@ -166,24 +170,31 @@ button {
 
 .noResultsGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .noResultsContent {
-  grid-column: 1;
-  grid-row: 1;
+  border: 10px solid darkgrey;
+  width: 1244px;
+  background-color: rgb(90 146 62);
+}
+
+.listOfPlaces {
+  border: 10px solid darkgrey;
+  width: 766px;
+  margin-left: -40px;
+  height: 287px;
 }
 
 .noResultsPicture {
-  grid-column: 3;
-  grid-row: 1;
-  width: 816px;
-  height: 612px;
+  width: 544px;
+  height: 408px;
   text-align: right;
   transform: rotate(90deg);
-  margin-top: 100px;
-  margin-left: 400px;
+  margin-left: 768px;
+  margin-bottom: 200px;
+  margin-top: -139px;
+  border: 10px solid darkgrey;
 }
 
 #space2 {
