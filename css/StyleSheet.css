@@ -1,3 +1,16 @@
+
+header {
+  background-color:
+}
+
+body {
+  background-color: #10E7DC;
+}
+
+footer {
+  background-color:
+}
+
 button {
   border: 0px;
   font-size: 30px;
@@ -15,7 +28,7 @@ button {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   text-align: center;
-  background-color: rgb(73 97 142);
+  background-color: #0074E1;
   padding: 10px;
   font-style: bold;
   font-size: 30px;
@@ -25,24 +38,24 @@ button {
   grid-row: 1;
   font-size: 30px;
   font-family: Arial;
-  background-color: rgb(73 97 142);
+  background-color: #0074E1;
   color: #e2e2e2;
 }
 .home:hover, .home:focus {
-    background-color: #2b8fd1;
+    background-color: #1B9CE5;
 }
 #destinationsButton {
   grid-column: 2;
   grid-row: 1;
   font-family: Arial;
-  background-color: rgb(73 97 142);
+  background-color: #0074E1;
   color: #e2e2e2;
 }
 .help {
   grid-column: 3;
   grid-row: 1;
   font-family: Arial;
-  background-color: rgb(73 97 142);
+  background-color: #0074E1;
   color: #e2e2e2;
 }
 .help:hover, .help:focus {
@@ -52,7 +65,7 @@ button {
   grid-column: 4;
   grid-row: 1;
   font-family: Arial;
-  background-color: rgb(73 97 142);
+  background-color: #0074E1;
   color: #e2e2e2;
 }
 .logIn:hover, .logIn:focus {
@@ -168,36 +181,73 @@ button {
 #specialsListButton {background-color: #f1f1f1;}
 #specialsListButton:hover {background-color: #ddd;}
 
+/*noResults*/
+
 .noResultsGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .noResultsContent {
-  border: 10px solid darkgrey;
-  width: 1244px;
-  background-color: rgb(90 146 62);
+  width: 100%;
+  margin-left: 0%;
+}
+
+.noResultsContent1 {
+  color: rgb(241 241 241);
 }
 
 .listOfPlaces {
-  border: 10px solid darkgrey;
-  width: 766px;
-  margin-left: -40px;
-  height: 287px;
+  width: 25%;
+  margin-left: 0%;
+  height: 40%;
+  background-color: #10E7DC;
+  border-color: #10E7DC;
 }
 
 .noResultsPicture {
-  width: 544px;
-  height: 408px;
-  text-align: right;
+  width: 100%;
+  height: 100%;
   transform: rotate(90deg);
-  margin-left: 768px;
-  margin-bottom: 200px;
-  margin-top: -139px;
-  border: 10px solid darkgrey;
+  margin-left: 100%;
+  margin-top: -23.5%;
+}
+
+#actListButton {
+  background-color: #10E7DC;
+}
+
+#nswListButton {
+  background-color: #10E7DC;
+}
+
+#specialsListButton: {
+  background-color: #10E7DC;
 }
 
 #space2 {
   grid-column: 2;
   grid-row: 1;
+}
+
+/*ACT*/
+
+.actGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.actContent {
+  border: 10px solid darkgrey;
+
+}
+
+.actPicture {
+  width: 544px;
+  height: 408px;
+  text-align: right;
+  transform: rotate(90deg);
+  margin-left: 700px;
+  margin-top: 68px;
+  border: 10px solid darkgrey;
 }
