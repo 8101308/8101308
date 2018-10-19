@@ -4,7 +4,7 @@ header {
 }
 
 body {
-  background-color: #10E7DC;
+  background-color: rgb(113 167 252);
 }
 
 footer {
@@ -158,28 +158,15 @@ button {
 .dSpecials:hover {background-color: #ddd}
 
 /* No results page list of places */
-.listPlaces {
-  margin-left: 30px;
-  background-color: #f1f1f1;
-}
 
-.listOfPlaces {
-  border-style: solid;
-  border-color: #f1f1f1;
-  background-color: #f1f1f1;
-  padding: 30px;
-  display: block;
-  position: absolute;
-}
+#actListButton {background-color: rgb(113 167 252);}
+#actListButton:hover {background-color: #1B9CE5;}
 
-#actListButton {background-color: #f1f1f1;}
-#actListButton:hover {background-color: #ddd;}
+#nswListButton {background-color: rgb(113 167 252);}
+#nswListButton:hover {background-color: #1B9CE5;}
 
-#nswListButton {background-color: #f1f1f1;}
-#nswListButton:hover {background-color: #ddd;}
-
-#specialsListButton {background-color: #f1f1f1;}
-#specialsListButton:hover {background-color: #ddd;}
+#specialsListButton {background-color: rgb(113 167 252);}
+#specialsListButton:hover {background-color: #1B9CE5;}
 
 /*noResults*/
 
@@ -190,19 +177,16 @@ button {
 
 .noResultsContent {
   width: 100%;
-  margin-left: 0%;
-}
-
-.noResultsContent1 {
+  margin-left: 5%;
   color: rgb(241 241 241);
 }
 
 .listOfPlaces {
   width: 25%;
-  margin-left: 0%;
+  margin-left: 5%;
   height: 40%;
-  background-color: #10E7DC;
-  border-color: #10E7DC;
+  background-color: rgb(113 167 252);
+  border-color: rgb(113 167 252);
 }
 
 .noResultsPicture {
@@ -210,19 +194,7 @@ button {
   height: 100%;
   transform: rotate(90deg);
   margin-left: 100%;
-  margin-top: -23.5%;
-}
-
-#actListButton {
-  background-color: #10E7DC;
-}
-
-#nswListButton {
-  background-color: #10E7DC;
-}
-
-#specialsListButton: {
-  background-color: #10E7DC;
+  margin-top: -40%;
 }
 
 #space2 {
@@ -237,17 +209,79 @@ button {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.actContent {
-  border: 10px solid darkgrey;
+.actTitle {
+  width: 100%;
+  margin-left: 5%;
+  color: rgb(241 241 241);
+}
 
+.actContent {
+  max-width: 100%;
+  margin-left: 5%;
+  color: rgb(241 241 241);
+  border: 1px solid black;
 }
 
 .actPicture {
   width: 544px;
   height: 408px;
-  text-align: right;
   transform: rotate(90deg);
-  margin-left: 700px;
-  margin-top: 68px;
-  border: 10px solid darkgrey;
+  margin-left: 10%;
+  margin-top: 20%;
+}
+
+/*NSW*/
+
+.nswGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.nswTitle {
+  width: 100%;
+  margin-left: 5%;
+  color: rgb(241 241 241);
+}
+
+.nswContent {
+  max-width: 100%;
+  margin-left: 5%;
+  color: rgb(241 241 241);
+  border: 1px solid black;
+}
+
+.nswPicture {
+  width: 544px;
+  height: 408px;
+  transform: rotate(90deg);
+  margin-left: 10%;
+  margin-top: 20%;
+}
+
+/*Specials*/
+
+.specialsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.specialsTitle {
+  width: 100%;
+  margin-left: 5%;
+  color: rgb(241 241 241);
+}
+
+.specialsContent {
+  max-width: 100%;
+  margin-left: 5%;
+  color: rgb(241 241 241);
+  border: 1px solid black;
+}
+
+.specialsPicture {
+  width: 544px;
+  height: 408px;
+  transform: rotate(90deg);
+  margin-left: 10%;
+  margin-top: 20%;
 }
