@@ -39,12 +39,12 @@
       <div class="enquireDropdownBtn">
         <button id="enquireBtn" class="enquireDropBtn" onclick="enquireButtonFunction()">Select Destination</button>
         <div id="enquireDropBtnContent" class="enquireDropdownContent">
-          <div>
+          <a href="#ACT">
             <button class="eACT">ACT</button>
-          </div>
-          <div>
+          </a>
+          <a href="#NSW">
             <button class="eNSW">NSW</button>
-          </div>
+          </a>
         </div>
       </div>
     <div>
@@ -83,6 +83,22 @@
 
         function speacialsFunction() {
           window.open("https://8101308.github.io/specials","_self"); }
+
+        function enquireButtonFunction() {
+          document.getElementById("enquireDropBtnContent").classList.toggle("show"); }
+
+        window.onclick = function(event) {
+          if (!event.target.matches('.enquireDropBtn')) {
+            var dropdowns = document.getElementsByClassName("enquireDropdownContent");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
     </script>
   <body>
 <html>

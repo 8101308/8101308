@@ -290,3 +290,9 @@ button {
 
 .helpContent {
 }
+
+/*Enquire Now*/
+
+.enquireDropdownContent {
+  display: none;
+}
