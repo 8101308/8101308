@@ -24,47 +24,65 @@
         </div>
       </div>
       <div>
-        <button id="helpButton" class="help" onclick="helpFunction()">Help</button>
+        <button id="helpButton" class="help" onclick="helpFunction()">About Us</button>
       </div>
       <div>
-        <button id="logInButton" class="logIn" onclick="logInFunction()">Log In</button>
+        <button id="logInButton" class="logIn" onclick="logInFunction()">Enquire Now</button>
       </div>
     </div>
   </header>
   <body>
     <div>
-      <h1>Log In</h1>
-      <head>
-        <link rel= "stylesheet" type= "text/css" href= "css/StyleSheet.css">
-        <title>Destination-Nation</title>
-      </head>
-      <header>
-        <div class="navBar">
+      <h1>Enquire Now</h1>
+    </div class="formStart">
+      <h3>Choose Destination</h3>
+      <div class="enquireDropdownBtn">
+        <button id="enquireBtn" class="enquireDropBtn" onclick="enquireButtonFunction()">Select Destination</button>
+        <div id="enquireDropBtnContent" class="enquireDropdownContent">
           <div>
-            <button id="homeButton" class="home" onclick="homeFunction()">Home</button>
-          </div>
-          <div class="destinations">
-            <button id="destinationsButton" class="dropbtn" onclick="destinationsFunction()">Destinations</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#act">
-                <button class="dACT" onclick="actFunction()">ACT</button>
-              </a>
-              <a href="#nsw">
-                <button class="dNSW" onclick="nswFunction()">NSW</button>
-              </a>
-              <a href="#specialOffers">
-                <button class="dSpecials" onclick="speacialsFunction()">Special Offers</button>
-              </a>
-            </div>
+            <button class="eACT">ACT</button>
           </div>
           <div>
-            <button id="helpButton" class="help" onclick="helpFunction()">Help</button>
-          </div>
-          <div>
-            <button id="logInButton" class="logIn" onclick="logInFunction()">Log In</button>
+            <button class="eNSW">NSW</button>
           </div>
         </div>
-      </header>
+      </div>
+    <div>
     </div>
+    <script>
+      function homeFunction() {
+        window.open("https://8101308.github.io/","_self");  }
+
+      function helpFunction() {
+        window.open("https://8101308.github.io/help","_self"); }
+
+      function logInFunction() {
+        window.open("https://8101308.github.io/log-in","_self"); }
+
+      function destinationsFunction() {
+        document.getElementById("myDropdown").classList.toggle("show"); }
+
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+
+        function actFunction() {
+          window.open("https://8101308.github.io/act","_self");  }
+
+        function nswFunction() {
+          window.open("https://8101308.github.io/nsw","_self");  }
+
+        function speacialsFunction() {
+          window.open("https://8101308.github.io/specials","_self"); }
+    </script>
   <body>
 <html>
