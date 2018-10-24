@@ -1,14 +1,6 @@
 
-header {
-  background-color:
-}
-
 body {
   background-color: rgb(113 167 252);
-}
-
-footer {
-  background-color:
 }
 
 button {
@@ -292,3 +284,9 @@ button {
 }
 
 /*Enquire Now*/
+
+.eNowButton {
+  margin-left: 10%;
+  color: white;
+  background-color: #0074E1;
+}
