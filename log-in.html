@@ -39,18 +39,18 @@
       <div class="formStart">
         <h3>Choose Destination</h3>
 
-
-        <div class="enquireDropdownBtn">
-          <button class="enquireDropBtn" onclick="myFunction()">Select Destination</button>
-          <div id="myDropDown2" class="enquireDropdownContent">
-            <a href="#ACT">
-              <button class="eACT" onclick="eACTFunction">ACT</button>
-            </a>
-            <a href="#NSW">
-              <button class="eNSW" onclick="eNSWFunction">NSW</button>
-            </a>
-          </div>
-        </div> 
+        <form>
+          <input type="radio" name="place" value="ACT"> ACT<br>
+          <input type="radio" name="place" value="ACT"> NSW<br>
+          <br>
+          First Name: <br>
+          <input tpye="text" name="firstname"><br>
+          Last Name: <br>
+          <input type="text" name="secondname"><br>
+          Email Adress: <br>
+          <input type="text" name="email"><br>
+          <input type="submit" name="submit">
+        </form>
 
 
       </div>
@@ -93,9 +93,6 @@
 
         function speacialsFunction() {
           window.open("https://8101308.github.io/specials","_self"); }
-
-        function myFunction() {
-          document.getElementById("myDropDown2").classList.toggle("show"); }
 
 
 
