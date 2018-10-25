@@ -285,8 +285,47 @@ button {
 
 /*Enquire Now*/
 
-.eNowButton {
+.eNowButtonACT {
   margin-left: 10%;
   color: white;
   background-color: #0074E1;
+}
+
+.eNowButtonNSW {
+  margin-left: -90%;
+  color: white;
+  background-color: #0074E1;
+}
+
+.eNowButtonQLD {
+  margin-left: 10%;
+  color: white;
+  background-color: #0074E1;
+}
+
+/*QLD*/
+
+.qldGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.qldTitle {
+  width: 100%;
+  margin-left: 5%;
+  color: rgb(241 241 241);
+}
+
+.qldContent {
+  max-width: 100%;
+  margin-left: 5%;
+  color: rgb(241 241 241);
+  border: 1px solid black;
+}
+
+.qldPicture {
+  width: 408px;
+  height: 544px;
+  margin-left: 20%;
+  margin-top: 10%;
 }
