@@ -286,11 +286,10 @@ marquee {
 }
 
 .specialsPicture {
-  width: 544px;
-  height: 408px;
-  transform: rotate(90deg);
+  width: 408px;
+  height: 544px;
   margin-left: 10%;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 /*About Us*/
