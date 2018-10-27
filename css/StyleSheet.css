@@ -141,13 +141,16 @@ button {
 .show {display:block;}
 
 .dACT {background-color: #f1f1f1;}
-.dACT:hover {background-color: #ddd}
+.dACT:hover {background-color: #ddd;}
 
 .dNSW {background-color: #f1f1f1;}
-.dNSW:hover {background-color: #ddd}
+.dNSW:hover {background-color: #ddd;}
+
+.dQLD {background-color: #f1f1f1;}
+.dQLD:hover {background-color: #ddd;}
 
 .dSpecials {background-color: #f1f1f1;}
-.dSpecials:hover {background-color: #ddd}
+.dSpecials:hover {background-color: #ddd;}
 
 /* No results page list of places */
 
@@ -159,6 +162,10 @@ button {
 
 #specialsListButton {background-color: rgb(113 167 252);}
 #specialsListButton:hover {background-color: #1B9CE5;}
+
+#qldListButton {background-color: rgb(113 167 252);}
+#qldListButton:hover {background-color: #1B9CE5;}
+
 
 /*noResults*/
 
@@ -177,7 +184,6 @@ button {
   width: 25%;
   margin-left: 5%;
   height: 40%;
-  background-color: rgb(113 167 252);
   border-color: rgb(113 167 252);
 }
 
@@ -186,7 +192,7 @@ button {
   height: 100%;
   transform: rotate(90deg);
   margin-left: 100%;
-  margin-top: -40%;
+  margin-top: -54%;
 }
 
 #space2 {
@@ -280,7 +286,18 @@ button {
 
 /*About Us*/
 
-.helpContent {
+.helpPage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.helpPicture {
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
+  margin-top: 20%;
 }
 
 /*Enquire Now*/

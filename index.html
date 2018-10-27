@@ -18,6 +18,9 @@
           <a href="#nsw">
             <button class="dNSW" onclick="nswFunction()">NSW</button>
           </a>
+          <a href="#qld">
+            <button class="dQLD" onclick="qldFunction()">QLD</button>
+          </a>
           <a href="#specialOffers">
             <button class="dSpecials" onclick="speacialsFunction()">Special Offers</button>
           </a>
@@ -48,6 +51,8 @@
           var place = document.getElementById("searchPlace").value;
           if (place == "ACT") {
             window.open("https://8101308.github.io/act","_self"); }
+          else if (place == "QLD") {
+            window.open("https://8101308.github.io/qld","_self"); }
           else {
             window.open("https://8101308.github.io/noResults","_self");
           }  }
@@ -88,6 +93,11 @@
         function speacialsFunction() {
           window.open("https://8101308.github.io/specials","_self");
         }
+
+        function qldFunction() {
+          window.open("https://8101308.github.io/qld","_self");
+        }
+
       </script>
     </div>
   <body>
