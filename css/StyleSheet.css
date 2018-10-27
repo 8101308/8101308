@@ -8,6 +8,10 @@ button {
   font-size: 30px;
 }
 
+marquee {
+  color: white;
+}
+
 .title {
   text-align: center;
   font-size: 40px;
@@ -95,6 +99,11 @@ button {
 #space1 {
   grid-column: 3;
   grid-row: 2;
+}
+
+#initials {
+  color: white;
+  text-align: center;
 }
 
 .BP {
