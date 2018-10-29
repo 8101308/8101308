@@ -1,3 +1,4 @@
+/* Background colour */
 
 body {
   background-color: rgb(113 167 252);
@@ -12,12 +13,16 @@ marquee {
   color: white;
 }
 
+/* title page title */
+
 .title {
   text-align: center;
   font-size: 40px;
   font-family: impact;
   text-shadow: 2px 2px white;
 }
+
+/* nav bar css */
 
 .navBar {
   display: grid;
@@ -68,6 +73,8 @@ marquee {
     background-color: #2b8fd1;
 }
 
+/* search box */
+
 .finder {
   display: grid;
   grid-template-columns: (3, 1fr);
@@ -106,6 +113,8 @@ marquee {
   text-align: center;
 }
 
+/* title page background picture */
+
 .BP {
   background-image: url("../assets/titlePicture.jpg");
   background-repeat: no-repeat;
@@ -113,6 +122,8 @@ marquee {
   background-size: cover;
   background-position: center;
 }
+
+/* nav bar drop down */
 
 .dropbtn {
     color: black;

@@ -1,11 +1,11 @@
 <!doctype html>
-<html>
+<html> <!--- home page --->
   <head>
-    <link rel= "stylesheet" type= "text/css" href= "css/StyleSheet.css">
+    <link rel= "stylesheet" type= "text/css" href= "css/StyleSheet.css"> <!--- link to style sheet --->
     <title>Destination-Nation</title>
   </head>
   <header>
-    <div class="navBar">
+    <div class="navBar"> <!--- navigation bar starts here --->
       <div>
         <button id="homeButton" class="home" onclick="homeFunction()">Home</button>
       </div>
@@ -32,23 +32,23 @@
       <div>
         <button id="logInButton" class="logIn" onclick="logInFunction()">Enquire Now</button>
       </div>
-    </div>
+    </div> <!--- nav bar ends here --->
   </header>
-  <body class="BP">
+  <body class="BP"> <!--- Body is labbled with a class that contains the background picture --->
     <div>
       <div class="title">
-        <h1>Destination Nation<h1>
+        <h1>Destination Nation<h1> <!--- title --->
       </div>
       <br><br><br><br><br><br>
-      <div class="finder">
+      <div class="finder"> <!--- search bar starts here --->
         <input id="searchPlace" class="searchField" type="text" placeholder="  Search...">
         <br>
         <button id="searchPlaces" class="searchButton" onclick="searchPlaceFunction()">Press to Search</button>
 	      <h1 id="space1"></h1>
-      </div>
+      </div> <!--- search bar ends here --->
       <p id="initials">Use state initials to search (Eg. "ACT").</p>
-      <script>
-        function searchPlaceFunction() {
+      <script> //Javescript starts here
+        function searchPlaceFunction() { //script for the search bar. Checks what you typed in then compares it to presets
           var place = document.getElementById("searchPlace").value;
           if (place == "ACT") {
             window.open("https://8101308.github.io/act","_self"); }
@@ -58,6 +58,7 @@
             window.open("https://8101308.github.io/noResults","_self");
           }  }
 
+//These are used to just take the user to a certain page
         function homeFunction() {
           window.open("https://8101308.github.io/","_self");  }
 
@@ -67,9 +68,11 @@
         function logInFunction() {
           window.open("https://8101308.github.io/log-in","_self"); }
 
+//Destinations drop down makes the drop down appear
         function destinationsFunction() {
             document.getElementById("myDropdown").classList.toggle("show"); }
 
+//Whene the user clicks out of the drop down, it gets removed
         window.onclick = function(event) {
           if (!event.target.matches('.dropbtn')) {
             var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -83,6 +86,7 @@
           }
         }
 
+//all used to take the user to a specific page
         function actFunction() {
           window.open("https://8101308.github.io/act","_self");
         }
