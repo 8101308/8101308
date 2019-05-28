@@ -1,0 +1,113 @@
+<!doctype html>
+<html> <!--- home page --->
+  <head>
+    <link rel= "stylesheet" type= "text/css" href= "css/StyleSheet.css"> <!--- link to style sheet --->
+    <title>Destination-Nation</title>
+  </head>
+  <header>
+    <div class="navBar"> <!--- navigation bar starts here --->
+      <div>
+        <button id="homeButton" class="home" onclick="homeFunction()">Home</button>
+      </div>
+      <div class="destinations">
+        <button id="destinationsButton" class="dropbtn" onclick="destinationsFunction()">Destinations</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#act">
+            <button class="dACT" onclick="actFunction()">ACT</button>
+          </a>
+          <a href="#nsw">
+            <button class="dNSW" onclick="nswFunction()">NSW</button>
+          </a>
+          <a href="#qld">
+            <button class="dQLD" onclick="qldFunction()">QLD</button>
+          </a>
+          <a href="#specialOffers">
+            <button class="dSpecials" onclick="speacialsFunction()">Special Offers</button>
+          </a>
+        </div>
+      </div>
+      <div>
+        <button id="helpButton" class="help" onclick="helpFunction()">About Us</button>
+      </div>
+      <div>
+        <button id="logInButton" class="logIn" onclick="logInFunction()">Enquire Now</button>
+      </div>
+    </div> <!--- nav bar ends here. The nav bar is on evry page except the "Thankyou" page --->
+  </header>
+  <body class="BP"> <!--- Body is labbled with a class that contains the background picture --->
+    <div>
+      <div class="title">
+        <h1>Destination Nation<h1> <!--- title --->
+      </div>
+      <br><br><br><br><br><br>
+      <div class="finder"> <!--- search bar starts here --->
+        <input id="searchPlace" class="searchField" type="text" placeholder="  Search...">
+        <br>
+        <button id="searchPlaces" class="searchButton" onclick="searchPlaceFunction()">Press to Search</button>
+	      <h1 id="space1"></h1>
+      </div> <!--- search bar ends here --->
+      <p id="initials">Use state initials to search (Eg. "ACT").</p>
+      <script> //Javescript starts here
+        function searchPlaceFunction() { //script for the search bar. Checks what you typed in then compares it to presets
+          var place = document.getElementById("searchPlace").value;
+          if (place == "ACT") {
+            window.open("https://8101308.github.io/act","_self"); }
+          else if (place == "QLD") {
+            window.open("https://8101308.github.io/qld","_self"); }
+          else {
+            window.open("https://8101308.github.io/noResults","_self");
+          }  }
+
+//These are used to just take the user to a certain page
+        function homeFunction() {
+          window.open("https://8101308.github.io/","_self");  }
+
+        function helpFunction() {
+          window.open("https://8101308.github.io/help","_self"); }
+
+        function logInFunction() {
+          window.open("https://8101308.github.io/log-in","_self"); }
+
+//Destinations drop down makes the drop down appear
+        function destinationsFunction() {
+            document.getElementById("myDropdown").classList.toggle("show"); }
+
+//Whene the user clicks out of the drop down, it gets removed
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+
+//all used to take the user to a specific page
+        function actFunction() {
+          window.open("https://8101308.github.io/act","_self");
+        }
+
+        function nswFunction() {
+          window.open("https://8101308.github.io/nsw","_self");
+        }
+
+        function speacialsFunction() {
+          window.open("https://8101308.github.io/specials","_self");
+        }
+
+        function qldFunction() {
+          window.open("https://8101308.github.io/qld","_self");
+        }
+
+      </script>
+    </div>
+  <body>
+  <footer>
+    <br><br><br><br><br>
+    <marquee>Destination-Nation, Last updated 2018</marquee>
+  </footer>
+<html>
